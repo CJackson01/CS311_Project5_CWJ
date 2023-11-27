@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="craps.css">
+  <title>Craps</title>
+</head>
+<body>
+  <h1>Craps</h1>
+  <form name="craps">
+    <table border="1">
+      <tr>
+        <td bgcolor="green">Die 1</td>
+        <td><input name="firstDie" type="text"></td>
+        <td><img id="showdie1" width="60" height="54"></td>
+      </tr>
+      <tr>
+        <td bgcolor="green">Die 2</td>
+        <td><input name="secondDie" type="text"></td>
+        <td><img id="showdie2" width="60" height="54"></td>
+      </tr>
+      <tr>
+        <td>Sum</td>
+        <td><input name="sum" type="text"></td>
+      </tr>
+      <tr>
+        <td>Point</td>
+        <td><input name="point" type="text"></td>
+      </tr>
+      <tr>
+        <td>Bank</td>
+        <td><input name="bank" type="text"></td>
+      </tr>
+      <tr>
+        <td>Bet</td>
+        <td><input id="bet" type="number" placeholder="Enter Bet" min="1" step="1"></td>
+      </tr>
+      <tr>
+        <td><button type="button" onclick="getBet(); play();">Roll Dice</button></td>
+      </tr>
+    </table>
+  </form>
+  <script src="craps.js"></script>
+</body>
+</html>
